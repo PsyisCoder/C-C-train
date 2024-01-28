@@ -47,6 +47,9 @@ int main()
 	{
 		printf("%d ", p->arr[i]);
 	}
+	free(p->arr);
+	p->arr = NULL;
 	free(p);
+	p = NULL;
 	return 0;
 }
